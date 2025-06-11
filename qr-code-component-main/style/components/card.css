@@ -1,9 +1,6 @@
-
-
 .card {
-    border-radius: 1.25rem;
-    background-color: var(--color-white);
-    width: 550px;
-    height: 450px;
+  border-radius: 1.25rem;
+  background-color: var(--color-white);
+  width: 550px;
+  height: 450px;
 }
-

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <style type="text/tailwindcss">
+    @import "tailwindcss";
+    
+    @font-face {
+      font-family: "Montserrat";
+      src: url("./assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+      font-weight: 500, 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Fraunces";
+      src: url("./assets/fonts/fraunces/Fraunces-VariableFont_opsz,wght.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[hsl(30,38%,92%)]">
+  <main class="max-w-sm bg-white rounded-xl shadow-md md:max-w-2xl md:flex">
+    <section class="md:w-1/2">
+      <img 
+        class="rounded-t-xl w-full h-75 object-cover md:h-full md:rounded-l-xl md:rounded-tr-none" 
+        src="./images/image-product-mobile.jpg"
+        srcset="./images/image-product-mobile.jpg 600w, ./images/image-product-desktop.jpg 900w"
+        sizes="(min-width: 768px) 50vw, 100vw"
+        alt="Product Image "
+      >
+    </section>
+
+    <section class="p-6 flex flex-col gap-4 md:w-1/2 md:rounded-r-xl md:rounded-bl-none md:p-10">
+      <span class="tracking-[0.3rem] text-xs md:text-base text-gray-400 font-[Montserrat]">PERFUME</span>
+      <h1 class="font-[Fraunces] text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Gabrielle Essence Eau De Parfum
+      </h1>
+      <p class="md:tracking-wider text-gray-500 text-base font-[Montserrat]">A floral, solar and voluptous interpretation composed by Olvier Polge, Perfume-Creator for the House of CHANEL.</p>
+
+      <div class="flex items-center justify-start gap-5">
+        <span class="text-4xl font-bold text-[hsl(158,36%,37%)] font-[Fraunces]">$149.99</span>
+        <span class="text-base line-through text-gray-500 font-[Montserrat]">$169.99</span>
+      </div>
+
+      <button class="tracking-wider w-full flex items-center justify-center gap-2 bg-[hsl(158,36%,37%)] text-white font-[Montserrat] py-3 rounded-md">
+        Add to Cart
+      </button>
+    </section>
+    
+        
+  </main>
+</body
+</html>
