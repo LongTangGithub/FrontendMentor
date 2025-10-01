@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <style type="text/tailwindcss">
+    @import "tailwindcss";
+
+    @theme {
+      --font-poppins: "Poppins", serif;
+    }
+  </style>
+  <title>Frontend Mentor | Four card feature section</title>
+
+</head>
+<body class="bg-[hsl(0,0%,100%)] font-poppins flex flex-col items-center justify-center mt-[7.5rem] mb-[7.5rem]">
+  <section class="min-h-screen border-2 border-red-500 p-15">
+    <div class="flex flex-col items-center justify-center">
+      <h1 class="text-[2.5rem] font-light text-[hsl(234,12%,34%)]">Reliable, efficient delivery</h1>
+      <h1 class="text-[2.5rem] font-semibold text-[hsl(234,12%,34%)]">Powered by Technology</h1>
+      <p class="text-2xl/9 font-light max-w-[32rem] mt-7 text-center">Our artificial intelligence powered tools use millions of project data points to ensure that your project is successful
+      </p>
+    </div>
+
+    <div class="max-w-5xl bg-white rounded-xl shadow-2xl p-8 border-t-4 border-t-[hsl(180,62%,55%)] mt-20">
+      <div class="ml-5">
+        <h2 class="text-2xl font-semibold text-[hsl(234,12%,34%)] mt-6">Supervisor</h2>
+        <p class="text-xl font-light max-w-[30ch] mt-4">Monitors activity to identify project roadblocks</p>
+      </div>
+      <div class="flex justify-end m-12">
+          <img src="./images/icon-supervisor.svg" alt="Supervisor" class="size-25">
+      </div>
+    </div>
+
+    <div class="max-w-5xl bg-white rounded-xl shadow-2xl p-8 border-t-4 border-t-[hsl(0,78%,62%)] mt-20">
+      <div class="ml-5">
+        <h2 class="text-2xl font-semibold text-[hsl(234,12%,34%)] mt-6">Team Builder</h2>
+        <p class="text-xl font-light max-w-[30ch] mt-4">Scans our talent network to create the optimal team for your project</p>
+      </div>
+      <div class="flex justify-end m-12">
+          <img src="./images/icon-team-builder.svg" alt="Team Builder" class="size-25">
+      </div>
+    </div>
+
+    <div class="max-w-5xl bg-white rounded-xl shadow-2xl p-8 border-t-4 border-t-[hsl(34,97%,64%)] mt-20">
+      <div class="ml-5">
+        <h2 class="text-2xl font-semibold text-[hsl(234,12%,34%)] mt-6">Karma</h2>
+        <p class="text-xl font-light max-w-[30ch] mt-4">Regularly evaluates our talent to ensure quality</p>
+      </div>
+      <div class="flex justify-end m-12">
+          <img src="./images/icon-karma.svg" alt="Lightbulb" class="size-25">
+      </div>
+    </div>
+
+    <div class="max-w-5xl bg-white rounded-xl shadow-2xl p-8 border-t-4 border-t-[hsl(212,86%,64%)] mt-20">
+      <div class="ml-5">
+        <h2 class="text-2xl font-semibold text-[hsl(234,12%,34%)] mt-6">Calculator</h2>
+        <p class="text-xl font-light max-w-[30ch] mt-4">Uses data from past projects to provide better delivery estimates</p>
+      </div>
+      <div class="flex justify-end m-12">
+          <img src="./images/icon-calculator.svg" alt="Calculator" class="size-25">
+      </div>
+    </div>
+
+    
+  </section>
+</body>
+</html>
